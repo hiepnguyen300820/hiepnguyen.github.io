@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Project 1: Interactive Vending Machine Program | Hiep Nguyen</title>
 
-  <!-- Minimal, beginner-friendly CSS (kept inside this file for simplicity) -->
+  <!-- Simple CSS styling -->
   <style>
     * { box-sizing: border-box; }
     html, body { margin: 0; }
@@ -33,8 +33,10 @@
   </style>
 </head>
 <body>
+<!-- link to skip navigation -->
 <a class="skip-link" href="#main">Skip to content</a>
 
+<!-- Page header with title and navigation -->
 <header class="wrapper" role="banner">
   <h1>Project 1: Interactive Vending Machine Program</h1>
   <nav aria-label="Main navigation">
@@ -44,20 +46,25 @@
   </nav>
 </header>
 
+<!-- Main content area -->
 <main id="main" class="wrapper">
   <article aria-labelledby="p1-title">
+    <!-- Project introduction -->
     <header class="card">
       <h2 id="p1-title">Interactive Vending Machine Program</h2>
       <p>This project simulates a digital vending machine with a simple menu, item selection, prices, and purchase feedback—similar to how real vending machines work.</p>
     </header>
 
+    <!-- layout with image and details -->
     <section class="grid" aria-label="Project overview">
       <figure>
+        <!-- Project illustration image -->
         <img src="images/vending-machine.jpg"
              alt="Illustration of a vending machine with snacks, drinks, and selection buttons.">
         <figcaption>Figure 1. Vending machine concept used to illustrate the program.</figcaption>
       </figure>
 
+      <!-- Project description and skills -->
       <section aria-label="Details">
         <h2>Description</h2>
         <p>
@@ -76,22 +83,17 @@
           <li>Organizing code for readability and future improvements</li>
         </ul>
 
-        <!-- Optional links (fill in when ready)
-        <h2>Links</h2>
-        <p>
-          <a href="#" target="_blank" rel="noopener">GitHub Repo</a> |
-          <a href="#" target="_blank" rel="noopener">Demo / PDF</a>
-        </p>
-        -->
       </section>
     </section>
   </article>
 </main>
 
+<!-- Footer with copyright -->
 <footer class="wrapper" role="contentinfo">
   <p>© <span id="year"></span> Hiep Nguyen • <a href="mailto:hi799860@ucf.edu">hi799860@ucf.edu</a></p>
 </footer>
 
+<!--show current year -->
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>

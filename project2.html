@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Project 2: Shoe Collection Management Program | Hiep Nguyen</title>
 
-  <!-- Minimal, beginner-friendly CSS (kept inside this file for simplicity) -->
+  <!-- Simple CSS styling for layout and design -->
   <style>
     * { box-sizing: border-box; }
     html, body { margin: 0; }
@@ -33,8 +33,10 @@
   </style>
 </head>
 <body>
+<!-- Accessibility link to skip directly to main content -->
 <a class="skip-link" href="#main">Skip to content</a>
 
+<!-- Page header with title and navigation -->
 <header class="wrapper" role="banner">
   <h1>Project 2: Shoe Collection Management Program</h1>
   <nav aria-label="Main navigation">
@@ -44,20 +46,25 @@
   </nav>
 </header>
 
+<!-- Main content area -->
 <main id="main" class="wrapper">
   <article aria-labelledby="p2-title">
+    <!-- Project introduction -->
     <header class="card">
       <h2 id="p2-title">Shoe Collection Management Program</h2>
       <p>Manage a personal shoe inventory: add shoes, remove shoes, and sort by price to compare values at a glance.</p>
     </header>
 
+    <!-- Layout with image on one side and details on the other -->
     <section class="grid" aria-label="Project overview">
       <figure>
+        <!-- Project illustration image -->
         <img src="images/shoes-collection.jpg"
              alt="Row of sneakers on a rack representing a shoe collection.">
         <figcaption>Figure 1. Shoe collection concept used to illustrate the program.</figcaption>
       </figure>
 
+      <!-- Project details and skills learned -->
       <section aria-label="Details">
         <h2>Description</h2>
         <p>
@@ -76,7 +83,8 @@
           <li>Strengthening problem-solving and logical thinking through coding</li>
         </ul>
 
-        <!-- Optional links (fill in when ready)
+        <!-- Links section (optional, can be added later) -->
+        <!--
         <h2>Links</h2>
         <p>
           <a href="#" target="_blank" rel="noopener">GitHub Repo</a> |
@@ -88,12 +96,15 @@
   </article>
 </main>
 
+<!-- Footer with copyright -->
 <footer class="wrapper" role="contentinfo">
   <p>© <span id="year"></span> Hiep Nguyen • <a href="mailto:hi799860@ucf.edu">hi799860@ucf.edu</a></p>
 </footer>
 
+<!-- Small script to show current year automatically -->
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
+
