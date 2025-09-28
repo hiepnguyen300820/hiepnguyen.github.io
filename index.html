@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hiep Nguyen — Resume</title>
-  <meta name="description" content="Resume of Hiep Nguyen, IT student at UCF.">
+  <meta name="description" content="Resume of Hiep Nguyen, IT student at UCF seeking an entry-level Data Analyst role.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,19 +19,22 @@
   </header>
 
   <main id="main">
-    <section aria-labelledby="photo-heading">
+    <!-- Professional headshot -->
+    <section aria-labelledby="photo-heading" class="hero">
       <h2 id="photo-heading" class="visually-hidden">Professional Photo</h2>
       <figure>
-        <img src="images/your-photo.jpg" alt="Professional headshot of Hiep Nguyen">
-        <figcaption class="visually-hidden">Headshot for resume</figcaption>
+        <img src="images/hiep-nguyen.jpg" alt="Professional headshot of Hiep Nguyen" width="200" height="200">
+        <figcaption class="visually-hidden">Headshot of Hiep Nguyen for resume</figcaption>
       </figure>
     </section>
 
+    <!-- Objective -->
     <section id="objective" aria-labelledby="objective-heading">
       <h2 id="objective-heading">Professional Objective</h2>
       <p>Detail-oriented IT student seeking an entry-level Data Analyst role where I can apply skills in Excel, Python, SQL, and Tableau to transform data into meaningful insights and support business decision-making.</p>
     </section>
 
+    <!-- Education -->
     <section id="education" aria-labelledby="education-heading">
       <h2 id="education-heading">Education</h2>
       <article>
@@ -41,50 +44,54 @@
           <dt>GPA</dt><dd>3.5</dd>
           <dt>Honors</dt><dd>Honors Student</dd>
           <dt>Relevant Coursework</dt>
-          <dd>Database Systems, Networking, Data Structures, Web Development, Statistics for IT, Data Mining</dd>
+          <dd>Database Systems, Networking Fundamentals, Data Structures, Web Development, Statistics for IT, Data Mining</dd>
         </dl>
       </article>
     </section>
 
+    <!-- Experience -->
     <section id="experience" aria-labelledby="experience-heading">
       <h2 id="experience-heading">Relevant Work Experience</h2>
       <article>
         <h3>Data Analyst Intern — Kobe Steakhouse</h3>
-        <p><time datetime="2024-01">2024</time> – Present · Orlando, FL</p>
+        <p><time datetime="2024-01">2024</time> – <time datetime="2025">Present</time> · Orlando, FL</p>
         <ul>
-          <li>Collected and analyzed customer sales data to identify seasonal trends and improve business planning.</li>
-          <li>Built simple dashboards in Excel and Tableau to help managers visualize daily performance metrics.</li>
-          <li>Assisted in streamlining weekly reporting by automating repetitive tasks using Python scripts.</li>
+          <li>Collected and analyzed sales and customer data to uncover seasonal trends and menu performance.</li>
+          <li>Built simple Excel/Tableau dashboards so managers could track daily KPIs at a glance.</li>
+          <li>Automated weekly reporting with Python (Pandas), reducing manual work by ~50%.</li>
         </ul>
       </article>
     </section>
 
+    <!-- Projects -->
     <section id="projects" aria-labelledby="projects-heading">
       <h2 id="projects-heading">Projects</h2>
       <article>
         <h3>Student Performance Data Analysis</h3>
-        <p>Analyzed a dataset of student grades to identify correlations between study habits and exam performance.</p>
+        <p>Analyzed a dataset of student grades to identify correlations between study habits and exam outcomes.</p>
         <ul>
-          <li>Cleaned and transformed raw data using Python and Pandas.</li>
-          <li>Created SQL queries to extract insights from relational tables.</li>
-          <li>Developed a Tableau dashboard to present key findings for non-technical audiences.</li>
+          <li>Cleaned and transformed raw data using Python (Pandas).</li>
+          <li>Wrote SQL queries to join and filter relational tables for targeted insights.</li>
+          <li>Designed a Tableau dashboard to present findings to non-technical viewers.</li>
         </ul>
       </article>
     </section>
 
+    <!-- Skills -->
     <section id="skills" aria-labelledby="skills-heading">
       <h2 id="skills-heading">Skills</h2>
-      <ul>
+      <ul class="skills">
         <li>Python (Pandas, NumPy)</li>
         <li>SQL</li>
         <li>Excel (Pivot Tables, VLOOKUP)</li>
         <li>Tableau</li>
         <li>Data Cleaning & Visualization</li>
-        <li>Networking Fundamentals</li>
         <li>Git & GitHub</li>
+        <li>Networking Fundamentals</li>
       </ul>
     </section>
 
+    <!-- Awards & Honors -->
     <section id="awards" aria-labelledby="awards-heading">
       <h2 id="awards-heading">Awards &amp; Honors</h2>
       <ul>
@@ -98,4 +105,6 @@
     <p>© <time datetime="2025">2025</time> Hiep Nguyen</p>
   </footer>
 </body>
+
+
 </html>

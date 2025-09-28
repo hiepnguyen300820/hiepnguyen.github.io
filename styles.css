@@ -1,25 +1,67 @@
-:root { --maxw: 72ch; --pad: 1rem; --gap: 1rem; }
+:root {
+  --maxw: 72ch;
+  --pad: 1rem;
+  --gap: 1rem;
+  --bg-chip: #f3f3f3;
+}
+
 * { box-sizing: border-box; }
 html { font-family: system-ui, Arial, sans-serif; line-height: 1.6; }
 body { margin: 0; color: #111; background: #fff; }
-.visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); border: 0; }
 
-.skip-link { position: absolute; left: -9999px; top: auto; }
-.skip-link:focus { left: 0; top: 0; background: #ffd; padding: .5rem 1rem; outline: 2px solid #000; }
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); border: 0;
+}
 
-header, main, footer { padding: var(--pad); margin-inline: auto; max-width: var(--maxw); }
+.skip-link {
+  position: absolute; left: -9999px; top: auto;
+}
+.skip-link:focus {
+  left: 0; top: 0; background: #ffd; padding: .5rem 1rem; outline: 2px solid #000;
+}
+
+header, main, footer {
+  padding: var(--pad);
+  margin-inline: auto;
+  max-width: var(--maxw);
+}
+
 header h1 { margin-bottom: .25rem; }
-.contact a { text-decoration: none; border-bottom: 2px solid transparent; }
-.contact a:focus, .contact a:hover { border-bottom-color: currentColor; }
+address { font-style: normal; }
+address a { text-decoration: none; border-bottom: 2px solid transparent; }
+address a:hover, address a:focus { border-bottom-color: currentColor; }
 
-.hero img { width: 160px; height: auto; border-radius: 50%; display: block; }
-.hero { display: flex; align-items: center; gap: var(--gap); }
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: .5rem;
+}
+.hero img {
+  width: 200px; height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 1rem auto;
+}
 
 h2 { margin-top: 2rem; }
+dl { margin: 0; }
+dt { font-weight: 600; }
+dd { margin: 0 0 .5rem 0; }
+
 ul { padding-left: 1.2rem; }
-.skills { display: flex; flex-wrap: wrap; gap: .5rem .75rem; list-style: none; padding-left: 0; }
-.skills li { background: #f3f3f3; padding: .3rem .6rem; border-radius: .5rem; }
+.skills {
+  display: flex; flex-wrap: wrap; gap: .5rem .75rem;
+  list-style: none; padding-left: 0; margin: 0;
+}
+.skills li {
+  background: var(--bg-chip);
+  padding: .3rem .6rem;
+  border-radius: .5rem;
+}
 
 @media (min-width: 768px) {
-  main { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+  main { display: block; }
 }
