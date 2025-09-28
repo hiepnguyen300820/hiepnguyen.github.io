@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project 2: Shoe Collection Management Program | Hiep Nguyen</title>
+
+  <!-- Minimal, beginner-friendly CSS (kept inside this file for simplicity) -->
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body { font-family: system-ui, Arial, sans-serif; line-height: 1.6; color: #111; background: #fff; }
+    a { color: #0b5fd7; }
+    a:focus { outline: 2px solid #0b5fd7; outline-offset: 2px; border-radius: 4px; }
+    .wrapper { max-width: 920px; margin: 0 auto; padding: 16px; }
+    header, nav, main, footer { margin-bottom: 16px; }
+    nav { display: flex; gap: 8px; flex-wrap: wrap; }
+    nav a { text-decoration: none; padding: 6px 10px; border: 1px solid #ddd; border-radius: 8px; }
+    nav a[aria-current="page"] { background: #eef4ff; border-color: #cfe0ff; }
+    h1 { font-size: 1.6rem; margin: 0 0 8px; }
+    h2 { font-size: 1.2rem; margin: 16px 0 6px; }
+    .card { border: 1px solid #ddd; border-radius: 12px; padding: 12px; background: #fafafa; }
+    figure { margin: 0; }
+    img { max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; }
+    figcaption { font-size: 0.9rem; color: #555; margin-top: 6px; }
+    .grid { display: block; }
+    @media (min-width: 768px) {
+      .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: start; }
+    }
+    .skip-link { position: absolute; left: -9999px; top: 0; }
+    .skip-link:focus { left: 8px; top: 8px; background: #000; color: #fff; padding: 8px 10px; border-radius: 8px; }
+    footer { font-size: 0.95rem; color: #444; }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="wrapper" role="banner">
+  <h1>Project 2: Shoe Collection Management Program</h1>
+  <nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="project1.html">Project 1</a>
+    <a href="project2.html" aria-current="page">Project 2</a>
+  </nav>
+</header>
+
+<main id="main" class="wrapper">
+  <article aria-labelledby="p2-title">
+    <header class="card">
+      <h2 id="p2-title">Shoe Collection Management Program</h2>
+      <p>Manage a personal shoe inventory: add shoes, remove shoes, and sort by price to compare values at a glance.</p>
+    </header>
+
+    <section class="grid" aria-label="Project overview">
+      <figure>
+        <img src="images/shoes-collection.jpg"
+             alt="Row of sneakers on a rack representing a shoe collection.">
+        <figcaption>Figure 1. Shoe collection concept used to illustrate the program.</figcaption>
+      </figure>
+
+      <section aria-label="Details">
+        <h2>Description</h2>
+        <p>
+          This project focused on building a program that manages a personal shoe collection. Users can add new shoes,
+          remove shoes, and organize their collection by features such as price. The program can display shoes sorted
+          from high to low, helping users keep track of what they own and compare values. It simulates the idea of a
+          digital shoe inventory system.
+        </p>
+
+        <h2>Skills Learned</h2>
+        <ul>
+          <li>Designing and managing data structures for collections</li>
+          <li>Implementing add/remove functionality with user input</li>
+          <li>Sorting data by price and other criteria</li>
+          <li>Practicing object-oriented programming ideas (classes and objects)</li>
+          <li>Strengthening problem-solving and logical thinking through coding</li>
+        </ul>
+
+        <!-- Optional links (fill in when ready)
+        <h2>Links</h2>
+        <p>
+          <a href="#" target="_blank" rel="noopener">GitHub Repo</a> |
+          <a href="#" target="_blank" rel="noopener">Demo / PDF</a>
+        </p>
+        -->
+      </section>
+    </section>
+  </article>
+</main>
+
+<footer class="wrapper" role="contentinfo">
+  <p>© <span id="year"></span> Hiep Nguyen • <a href="mailto:hi799860@ucf.edu">hi799860@ucf.edu</a></p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
